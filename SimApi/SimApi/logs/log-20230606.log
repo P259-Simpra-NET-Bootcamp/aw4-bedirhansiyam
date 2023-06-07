@@ -1,0 +1,384 @@
+2023-06-06 14:09:00.722 [INF] Application is starting...
+2023-06-06 14:09:13.560 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:13.566 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:13.568 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:15.249 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-06 14:09:15.255 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-06 14:09:16.131 [INF] -------------Request-Begin------------
+2023-06-06 14:09:16.133 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:16.134 [INF] 
+
+2023-06-06 14:09:16.136 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Account 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:09:16.138 [INF] -------------Request-End------------
+2023-06-06 14:09:22.641 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:22.643 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:22.644 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:22.768 [INF] -------------Request-Begin------------
+2023-06-06 14:09:22.771 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Category 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:22.774 [INF] 
+
+2023-06-06 14:09:22.775 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Category 
+QueryString:  
+StatusCode: 200 
+Response Body: [{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5}]
+2023-06-06 14:09:22.779 [INF] -------------Request-End------------
+2023-06-06 14:09:24.289 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:24.292 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:24.294 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:24.320 [INF] -------------Request-Begin------------
+2023-06-06 14:09:24.322 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Category 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:24.323 [INF] 
+
+2023-06-06 14:09:24.324 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Category 
+QueryString:  
+StatusCode: 200 
+Response Body: [{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5}]
+2023-06-06 14:09:24.327 [INF] -------------Request-End------------
+2023-06-06 14:09:31.830 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:31.832 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:31.833 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:32.155 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-06-06 14:09:32.182 [INF] -------------Request-Begin------------
+2023-06-06 14:09:32.188 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:32.189 [INF] 
+
+2023-06-06 14:09:32.190 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:09:32.191 [INF] -------------Request-End------------
+2023-06-06 14:09:44.603 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:44.606 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:44.607 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:44.926 [INF] -------------Request-Begin------------
+2023-06-06 14:09:44.928 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:44.930 [INF] 
+
+2023-06-06 14:09:44.932 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:09:44.933 [INF] -------------Request-End------------
+2023-06-06 14:09:49.903 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:09:49.904 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:09:49.906 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:09:49.921 [INF] -------------Request-Begin------------
+2023-06-06 14:09:49.923 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Product 
+QueryString:  
+Request Body: 
+2023-06-06 14:09:49.924 [INF] 
+
+2023-06-06 14:09:49.925 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Product 
+QueryString:  
+StatusCode: 200 
+Response Body: []
+2023-06-06 14:09:49.926 [INF] -------------Request-End------------
+2023-06-06 14:10:03.256 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:10:03.258 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:10:03.259 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:10:03.280 [INF] -------------Request-Begin------------
+2023-06-06 14:10:03.282 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction 
+QueryString:  
+Request Body: 
+2023-06-06 14:10:03.285 [INF] 
+
+2023-06-06 14:10:03.286 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:10:03.287 [INF] -------------Request-End------------
+2023-06-06 14:10:24.924 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:10:24.926 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:10:24.927 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:10:24.948 [INF] -------------Request-Begin------------
+2023-06-06 14:10:24.952 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-06 14:10:24.958 [INF] 
+
+2023-06-06 14:10:24.959 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:10:24.960 [INF] -------------Request-End------------
+2023-06-06 14:10:40.127 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:10:40.129 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:10:40.131 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:10:40.134 [INF] -------------Request-Begin------------
+2023-06-06 14:10:40.136 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+Request Body: 
+2023-06-06 14:10:40.137 [INF] 
+
+2023-06-06 14:10:40.139 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:10:40.140 [INF] -------------Request-End------------
+2023-06-06 14:10:52.285 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:10:52.288 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:10:52.289 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:10:52.294 [INF] -------------Request-Begin------------
+2023-06-06 14:10:52.296 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: 
+2023-06-06 14:10:52.297 [INF] 
+
+2023-06-06 14:10:52.298 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[]}
+2023-06-06 14:10:52.300 [INF] -------------Request-End------------
+2023-06-06 14:11:34.838 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:11:34.851 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:11:34.854 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:11:35.201 [INF] -------------Request-Begin------------
+2023-06-06 14:11:35.204 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: {"customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","dateOfBirth":"2002-06-06T10:11:10.836Z","accounts":[{"customerId":0,"accountNumber":0,"name":"string","openDate":"2023-06-06T10:11:10.836Z","balance":0}]}
+2023-06-06 14:11:35.207 [INF] 
+
+2023-06-06 14:11:35.208 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":null}
+2023-06-06 14:11:35.210 [INF] -------------Request-End------------
+2023-06-06 14:11:39.596 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:11:39.598 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:11:39.600 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:11:39.626 [INF] -------------Request-Begin------------
+2023-06-06 14:11:39.629 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+Request Body: 
+2023-06-06 14:11:39.632 [INF] 
+
+2023-06-06 14:11:39.635 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Customer 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","dateOfBirth":"2002-06-06T10:11:10.836Z","isValid":true,"accounts":[{"customerId":1,"accountNumber":0,"name":"string","openDate":"2023-06-06T10:11:10.836Z","balance":0.00,"isValid":true,"transactions":[],"id":1}],"id":1}]}
+2023-06-06 14:11:39.637 [INF] -------------Request-End------------
+2023-06-06 14:12:00.819 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:12:00.828 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:12:00.829 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:12:00.859 [INF] -------------Request-Begin------------
+2023-06-06 14:12:00.862 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+Request Body: 
+2023-06-06 14:12:00.863 [INF] 
+
+2023-06-06 14:12:00.866 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperAccount 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"customerId":1,"accountNumber":0,"name":"string","openDate":"2023-06-06T10:11:10.836Z","balance":0.00,"isValid":true,"transactions":[],"id":1}]}
+2023-06-06 14:12:00.867 [INF] -------------Request-End------------
+2023-06-06 14:12:36.817 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:12:36.827 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:12:36.842 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:12:36.958 [INF] -------------Request-Begin------------
+2023-06-06 14:12:36.961 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+Request Body: {"accountId":1,"description":"aaa","amount":11220}
+2023-06-06 14:12:36.962 [INF] 
+
+2023-06-06 14:12:36.964 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/Deposit 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"referenceNumber":"43524C7383","id":1}}
+2023-06-06 14:12:36.966 [INF] -------------Request-End------------
+2023-06-06 14:12:39.641 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:12:39.643 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:12:39.644 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:12:39.654 [INF] -------------Request-Begin------------
+2023-06-06 14:12:39.656 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction 
+QueryString:  
+Request Body: 
+2023-06-06 14:12:39.658 [INF] 
+
+2023-06-06 14:12:39.659 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","id":1}]}
+2023-06-06 14:12:39.661 [INF] -------------Request-End------------
+2023-06-06 14:12:58.282 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:12:58.283 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:12:58.284 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:12:58.305 [INF] -------------Request-Begin------------
+2023-06-06 14:12:58.307 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByReferenceNumber 
+QueryString: ?referenceNumber=43524C7383 
+Request Body: 
+2023-06-06 14:12:58.308 [INF] 
+
+2023-06-06 14:12:58.309 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByReferenceNumber 
+QueryString: ?referenceNumber=43524C7383 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","id":1}]}
+2023-06-06 14:12:58.310 [INF] -------------Request-End------------
+2023-06-06 14:13:09.073 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:13:09.075 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:13:09.076 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:13:09.098 [INF] -------------Request-Begin------------
+2023-06-06 14:13:09.102 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByParameter 
+QueryString: ?accountId=1 
+Request Body: 
+2023-06-06 14:13:09.105 [INF] 
+
+2023-06-06 14:13:09.106 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/Transaction/ByParameter 
+QueryString: ?accountId=1 
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","id":1}]}
+2023-06-06 14:13:09.107 [INF] -------------Request-End------------
+2023-06-06 14:13:19.614 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:13:19.616 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:13:19.617 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:13:19.636 [INF] -------------Request-Begin------------
+2023-06-06 14:13:19.638 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-06 14:13:19.641 [INF] 
+
+2023-06-06 14:13:19.645 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-06 14:13:19.648 [INF] -------------Request-End------------
+2023-06-06 14:13:33.456 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-06 14:13:33.457 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-06 14:13:33.458 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-06 14:13:33.492 [INF] -------------Request-Begin------------
+2023-06-06 14:13:33.495 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByReferenceNumber/43524C7383 
+QueryString:  
+Request Body: 
+2023-06-06 14:13:33.496 [INF] 
+
+2023-06-06 14:13:33.497 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByReferenceNumber/43524C7383 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-06 14:13:33.500 [INF] -------------Request-End------------
