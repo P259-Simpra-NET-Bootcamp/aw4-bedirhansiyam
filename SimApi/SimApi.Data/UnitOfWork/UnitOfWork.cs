@@ -9,10 +9,13 @@ public class UnitOfWork : IUnitOfWork
     public IGenericRepository<Category> CategoryRepository { get; private set; }
     public IDapperRepository<Account> DapperAccountRepository { get; private set; }
     public IDapperTransactionRepository DapperTransactionRepository { get; private set; }
+    public IDapperRepository<Category> DapperCategoryRepository { get; private set; }
+    public IEfTransactionRepository EfTransactionRepository { get; private set; }
 
 
     private readonly SimEfDbContext dbContext;
     private readonly SimDapperDbContext dapperDbContext;
+    private readonly string tableName;
     private bool disposed;
 
     public UnitOfWork(SimEfDbContext dbContext, SimDapperDbContext dapperDbContex)
@@ -23,12 +26,13 @@ public class UnitOfWork : IUnitOfWork
         CategoryRepository = new GenericRepository<Category>(dbContext);
         DapperAccountRepository = new DapperAccountRepository(dapperDbContext);
         DapperTransactionRepository = new DapperTransactionRepository(dapperDbContext);
+        EfTransactionRepository = new EfTransactionRepository(dbContext);
+    }
+    public IDapperRepository<Entity> DapperRepository<Entity>(string tableName) where Entity : BaseModel
+    {
+        return new DapperRepository<Entity>(dapperDbContext, tableName);
     }
 
-    public IDapperRepository<Entity> DapperRepository<Entity>() where Entity : BaseModel
-    {
-        return new DapperRepository<Entity>(dapperDbContext);
-    }
 
     public IGenericRepository<Entity> Repository<Entity>() where Entity : BaseModel
     {
@@ -45,14 +49,14 @@ public class UnitOfWork : IUnitOfWork
         {
             try
             {
-                dbContext.SaveChanges();               
+                dbContext.SaveChanges();
                 dbDcontextTransaction.Commit();
             }
             catch (Exception ex)
             {
                 // logging
                 dbDcontextTransaction.Rollback();
-            }         
+            }
         }
     }
 
@@ -74,4 +78,6 @@ public class UnitOfWork : IUnitOfWork
     {
         Clean(true);
     }
+
+    
 }

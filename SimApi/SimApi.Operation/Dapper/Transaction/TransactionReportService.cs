@@ -23,7 +23,7 @@ public class TransactionReportService : ITransactionReportService
     {
         try
         {
-            var entityList = unitOfWork.DapperTransactionRepository.GetAll();
+            var entityList = unitOfWork.EfTransactionRepository.GetAll();
             var mapped = mapper.Map<List<TransactionView>, List<TransactionViewResponse>>(entityList);
             return new ApiResponse<List<TransactionViewResponse>>(mapped);
         }
@@ -38,13 +38,13 @@ public class TransactionReportService : ITransactionReportService
     {
         try
         {
-            var entityList = unitOfWork.DapperTransactionRepository.GetByAccountId(accountId);
+            var entityList = unitOfWork.EfTransactionRepository.GetByAccountId(accountId);
             var mapped = mapper.Map<List<TransactionView>, List<TransactionViewResponse>>(entityList);
             return new ApiResponse<List<TransactionViewResponse>>(mapped);
         }
         catch (Exception ex)
         {
-            Log.Error(ex, "GetAll Exception");
+            Log.Error(ex, "GetByAccountId Exception");
             return new ApiResponse<List<TransactionViewResponse>>(ex.Message);
         }
     }
@@ -53,13 +53,13 @@ public class TransactionReportService : ITransactionReportService
     {
         try
         {
-            var entityList = unitOfWork.DapperTransactionRepository.GetByCustomerId(customerId);
+            var entityList = unitOfWork.EfTransactionRepository.GetByCustomerId(customerId);
             var mapped = mapper.Map<List<TransactionView>, List<TransactionViewResponse>>(entityList);
             return new ApiResponse<List<TransactionViewResponse>>(mapped);
         }
         catch (Exception ex)
         {
-            Log.Error(ex, "GetAll Exception");
+            Log.Error(ex, "GetByCustomerId Exception");
             return new ApiResponse<List<TransactionViewResponse>>(ex.Message);
         }
     }
@@ -68,13 +68,13 @@ public class TransactionReportService : ITransactionReportService
     {
         try
         {
-            var entityList = unitOfWork.DapperTransactionRepository.GetById(id);
+            var entityList = unitOfWork.EfTransactionRepository.GetById(id).FirstOrDefault();
             var mapped = mapper.Map<TransactionView, TransactionViewResponse>(entityList);
             return new ApiResponse<TransactionViewResponse>(mapped);
         }
         catch (Exception ex)
         {
-            Log.Error(ex, "GetAll Exception");
+            Log.Error(ex, "GetById Exception");
             return new ApiResponse<TransactionViewResponse>(ex.Message);
         }
     }
@@ -84,13 +84,13 @@ public class TransactionReportService : ITransactionReportService
 
         try
         {
-            var entityList = unitOfWork.DapperTransactionRepository.GetByReferenceNumber(referenceNumber);
+            var entityList = unitOfWork.EfTransactionRepository.GetByReferenceNumber(referenceNumber);
             var mapped = mapper.Map<List<TransactionView>, List<TransactionViewResponse>>(entityList);
             return new ApiResponse<List<TransactionViewResponse>>(mapped);
         }
         catch (Exception ex)
         {
-            Log.Error(ex, "GetAll Exception");
+            Log.Error(ex, "GetByReferenceNumber Exception");
             return new ApiResponse<List<TransactionViewResponse>>(ex.Message);
         }
     }

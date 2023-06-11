@@ -1,0 +1,493 @@
+2023-06-09 17:35:56.034 [INF] Application is starting...
+2023-06-09 17:36:19.963 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:36:19.971 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:36:19.975 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:36:24.006 [INF] -------------Request-Begin------------
+2023-06-09 17:36:24.086 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:36:24.088 [INF] 
+
+2023-06-09 17:36:24.090 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:36:24.093 [INF] -------------Request-End------------
+2023-06-09 17:36:53.301 [INF] Application is starting...
+2023-06-09 17:37:01.603 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:37:01.609 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:37:01.613 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:37:01.840 [FTL] Path=/simapi/v1/DapperCategory || Method=GET || Exception=Unable to resolve service for type 'SimApi.Operation.IDapperCategoryService' while attempting to activate 'SimApi.Service.DapperCategoryController'.
+2023-06-09 17:37:01.900 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 21285e03-f9e6-4529-bea1-6e010230576a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-09 17:37:02.006 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 21285e03-f9e6-4529-bea1-6e010230576a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-09 17:37:02.017 [ERR] Connection id "0HMR8TQBI6SF1", Request id "0HMR8TQBI6SF1:00000009": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id 21285e03-f9e6-4529-bea1-6e010230576a and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-06-09 17:37:17.235 [INF] Application is starting...
+2023-06-09 17:37:27.305 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:37:27.310 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:37:27.312 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:37:32.126 [INF] -------------Request-Begin------------
+2023-06-09 17:37:32.128 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:37:32.129 [INF] 
+
+2023-06-09 17:37:32.130 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:37:32.133 [INF] -------------Request-End------------
+2023-06-09 17:37:55.701 [INF] Application is starting...
+2023-06-09 17:38:02.964 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:38:02.969 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:38:02.972 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:38:03.833 [INF] -------------Request-Begin------------
+2023-06-09 17:38:03.834 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:38:03.836 [INF] 
+
+2023-06-09 17:38:03.837 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:38:03.841 [INF] -------------Request-End------------
+2023-06-09 17:39:42.425 [INF] Application is starting...
+2023-06-09 17:39:50.218 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:39:50.222 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:39:50.224 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:39:51.025 [INF] -------------Request-Begin------------
+2023-06-09 17:39:51.027 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:39:51.029 [INF] 
+
+2023-06-09 17:39:51.031 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:39:51.033 [INF] -------------Request-End------------
+2023-06-09 17:40:08.818 [INF] Application is starting...
+2023-06-09 17:40:16.137 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:40:16.143 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:40:16.147 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:40:17.016 [INF] -------------Request-Begin------------
+2023-06-09 17:40:17.018 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:40:17.019 [INF] 
+
+2023-06-09 17:40:17.020 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:40:17.022 [INF] -------------Request-End------------
+2023-06-09 17:41:40.553 [INF] Application is starting...
+2023-06-09 17:41:48.588 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:41:48.595 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:41:48.598 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:41:48.813 [FTL] Path=/simapi/v1/DapperCategory || Method=GET || Exception=An exception was thrown while activating SimApi.Operation.DapperCategoryService.
+2023-06-09 17:41:48.867 [ERR] An unhandled exception has occurred while executing the request.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id f7c610f1-c5db-425b-a740-ae7e3f60c3f9 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-09 17:41:48.940 [ERR] An exception was thrown attempting to display the error page.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id f7c610f1-c5db-425b-a740-ae7e3f60c3f9 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-06-09 17:41:48.952 [ERR] Connection id "0HMR8TT1987Q3", Request id "0HMR8TT1987Q3:00000009": An unhandled exception was thrown by the application.
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'The stream with Id f7c610f1-c5db-425b-a740-ae7e3f60c3f9 and Tag  is disposed.'.
+   at Microsoft.IO.RecyclableMemoryStream.ThrowDisposedException() in /_/src/RecyclableMemoryStream.cs:line 1453
+   at Microsoft.IO.RecyclableMemoryStream.Write(Byte[] buffer, Int32 offset, Int32 count) in /_/src/RecyclableMemoryStream.cs:line 997
+   at System.IO.MemoryStream.WriteAsync(ReadOnlyMemory`1 buffer, CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at System.IO.Pipelines.StreamPipeWriter.FlushAsyncInternal(Boolean writeToStream, ReadOnlyMemory`1 data, CancellationToken cancellationToken)
+   at SimApi.Service.Middleware.ErrorHandlerMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\ErrorHandlerMiddleware.cs:line 33
+   at SimApi.Service.Middleware.HeartBeatMiddleware.Invoke(HttpContext context) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi\Middleware\HeartBeatMiddleware.cs:line 25
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-06-09 17:42:26.201 [INF] Application is starting...
+2023-06-09 17:42:33.922 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 17:42:33.927 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 17:42:33.929 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 17:42:34.740 [INF] -------------Request-Begin------------
+2023-06-09 17:42:34.742 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-09 17:42:34.743 [INF] 
+
+2023-06-09 17:42:34.744 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-09 17:42:34.746 [INF] -------------Request-End------------
+2023-06-09 18:21:51.182 [INF] Application is starting...
+2023-06-09 18:22:05.198 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 18:22:05.205 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 18:22:05.207 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 18:22:44.405 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 18:22:44.412 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 18:22:48.545 [ERR] Failed executing DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT v."Id", v."AccountId", v."AccountName", v."AccountNumber", v."Amount", v."CustomerId", v."CustomerNumber", v."Description", v."Direction", v."FirstName", v."LastName", v."ReferenceNumber", v."TransactionCode", v."TransactionDate"
+FROM "vTransactionReport" AS v
+2023-06-09 18:22:48.599 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+2023-06-09 18:59:55.878 [INF] Application is starting...
+2023-06-09 19:00:07.809 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 19:00:07.817 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 19:00:07.820 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 19:01:19.728 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:01:19.735 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:01:21.494 [ERR] Failed executing DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT v."AccountId", v."AccountName", v."AccountNumber", v."Amount", v."CustomerId", v."CustomerNumber", v."Description", v."Direction", v."FirstName", v."Id", v."LastName", v."ReferenceNumber", v."TransactionCode", v."TransactionDate"
+FROM "vTransactionReport" AS v
+2023-06-09 19:01:21.551 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+2023-06-09 19:04:51.461 [INF] Application is starting...
+2023-06-09 19:05:00.130 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 19:05:00.135 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 19:05:00.138 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 19:05:05.958 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:05:05.964 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:05:06.760 [ERR] Failed executing DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT v."AccountId", v."AccountName", v."AccountNumber", v."Amount", v."CustomerId", v."CustomerNumber", v."Description", v."Direction", v."FirstName", v."Id", v."LastName", v."ReferenceNumber", v."TransactionCode", v."TransactionDate"
+FROM "vTransactionReport" AS v
+2023-06-09 19:05:06.814 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+2023-06-09 19:05:06.881 [ERR] GetAll Exception
+Npgsql.PostgresException (0x80004005): 42P01: relation "vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SimApi.Data.Repository.EfTransactionRepository.GetAll() in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Data\Repository\Transaction\EfTransactionRepository.cs:line 16
+   at SimApi.Operation.TransactionReportService.GetAll() in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Operation\Dapper\Transaction\TransactionReportService.cs:line 26
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+2023-06-09 19:05:22.131 [INF] -------------Request-Begin------------
+2023-06-09 19:05:22.133 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-09 19:05:22.136 [INF] 
+
+2023-06-09 19:05:22.141 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"42P01: relation \"vTransactionReport\" does not exist\r\n\r\nPOSITION: 244","response":null}
+2023-06-09 19:05:22.145 [INF] -------------Request-End------------
+2023-06-09 19:11:01.610 [INF] Application is starting...
+2023-06-09 19:11:11.781 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 19:11:11.786 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 19:11:11.789 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 19:12:15.163 [INF] Application is starting...
+2023-06-09 19:12:24.691 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-09 19:12:24.695 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-09 19:12:24.698 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-09 19:12:39.166 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:12:39.171 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-09 19:12:40.874 [ERR] Failed executing DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT d."AccountId", d."AccountName", d."AccountNumber", d."Amount", d."CustomerId", d."CustomerNumber", d."Description", d."Direction", d."FirstName", d."Id", d."LastName", d."ReferenceNumber", d."TransactionCode", d."TransactionDate"
+FROM "dbo.vTransactionReport" AS d
+2023-06-09 19:12:40.934 [ERR] An exception occurred while iterating over the results of a query for context type 'SimApi.Data.Context.SimEfDbContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "dbo.vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "dbo.vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "dbo.vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "dbo.vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable
+2023-06-09 19:13:22.580 [ERR] GetAll Exception
+Npgsql.PostgresException (0x80004005): 42P01: relation "dbo.vTransactionReport" does not exist
+
+POSITION: 244
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|211_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult()
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at SimApi.Data.Repository.EfTransactionRepository.GetAll() in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Data\Repository\Transaction\EfTransactionRepository.cs:line 16
+   at SimApi.Operation.TransactionReportService.GetAll() in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Operation\Dapper\Transaction\TransactionReportService.cs:line 26
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "dbo.vTransactionReport" does not exist
+    Position: 244
+    File: parse_relation.c
+    Line: 1395
+    Routine: parserOpenTable

@@ -32,7 +32,7 @@ public class TransactionViewConfiguration : IEntityTypeConfiguration<Transaction
 {
     public void Configure(EntityTypeBuilder<TransactionView> builder)
     {
-        builder.ToView("vTransactionReport");
+        builder.ToView("vTransactionReport", "dbo");
 
         builder.HasKey(x => x.Id);
 

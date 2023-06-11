@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Autofac;
+using Serilog;
 using SimApi.Base;
 using SimApi.Data.Uow;
 using SimApi.Service.Middleware;
@@ -25,12 +26,16 @@ public class Startup
 
         services.AddCustomSwaggerExtension();
         services.AddDbContextExtension(Configuration);
-        services.AddScoped<IUnitOfWork, UnitOfWork>();
+        //services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddMapperExtension();
-        services.AddRepositoryExtension();
-        services.AddServiceExtension();
+        //services.AddRepositoryExtension();
+        //services.AddServiceExtension();
         services.AddJwtExtension();
 
+    }
+    public void ConfigureContainer(ContainerBuilder builder)
+    {
+        builder.RegisterModule(new AutofacModule());
     }
 
 

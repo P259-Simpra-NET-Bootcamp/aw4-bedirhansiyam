@@ -1,0 +1,335 @@
+2023-06-11 20:25:27.865 [INF] Application is starting...
+2023-06-11 20:25:45.211 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:25:45.216 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:25:45.217 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:26:17.789 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:26:17.794 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:26:58.823 [INF] -------------Request-Begin------------
+2023-06-11 20:26:58.825 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 20:26:58.826 [INF] 
+
+2023-06-11 20:26:58.827 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:26:58.829 [INF] -------------Request-End------------
+2023-06-11 20:27:37.460 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:27:37.470 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:27:37.472 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:28:07.716 [ERR] GetById Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at SimApi.Data.Repository.EfTransactionRepository.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Data\Repository\Transaction\EfTransactionRepository.cs:line 31
+   at SimApi.Operation.TransactionReportService.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Operation\Dapper\Transaction\TransactionReportService.cs:line 71
+2023-06-11 20:28:07.794 [INF] -------------Request-Begin------------
+2023-06-11 20:28:07.799 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:28:07.800 [INF] 
+
+2023-06-11 20:28:07.801 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Object reference not set to an instance of an object.","response":null}
+2023-06-11 20:28:07.802 [INF] -------------Request-End------------
+2023-06-11 20:28:11.508 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:28:11.510 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:28:11.516 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:33:01.571 [INF] Application is starting...
+2023-06-11 20:33:12.859 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:33:12.864 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:33:12.865 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:33:29.380 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:33:29.386 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:33:52.078 [ERR] GetById Exception
+System.InvalidCastException: Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[SimApi.Data.TransactionView]' to type 'SimApi.Data.TransactionView'.
+   at SimApi.Data.Repository.EfTransactionRepository.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Data\Repository\Transaction\EfTransactionRepository.cs:line 31
+   at SimApi.Operation.TransactionReportService.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Operation\Dapper\Transaction\TransactionReportService.cs:line 71
+2023-06-11 20:33:52.159 [INF] -------------Request-Begin------------
+2023-06-11 20:33:52.168 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:33:52.169 [INF] 
+
+2023-06-11 20:33:52.170 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Unable to cast object of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[SimApi.Data.TransactionView]' to type 'SimApi.Data.TransactionView'.","response":null}
+2023-06-11 20:33:52.171 [INF] -------------Request-End------------
+2023-06-11 20:34:40.589 [INF] Application is starting...
+2023-06-11 20:34:51.506 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:34:51.511 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:34:51.513 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:34:56.080 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:34:56.086 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:34:56.977 [INF] -------------Request-Begin------------
+2023-06-11 20:34:56.980 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 20:34:56.981 [INF] 
+
+2023-06-11 20:34:56.981 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:34:56.983 [INF] -------------Request-End------------
+2023-06-11 20:35:19.992 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:35:19.993 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:35:19.996 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:35:49.068 [INF] -------------Request-Begin------------
+2023-06-11 20:35:49.073 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByReferenceNumber/43524C7383 
+QueryString:  
+Request Body: 
+2023-06-11 20:35:49.075 [INF] 
+
+2023-06-11 20:35:49.077 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByReferenceNumber/43524C7383 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:35:49.078 [INF] -------------Request-End------------
+2023-06-11 20:36:02.845 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:36:02.848 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:36:02.850 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:36:21.714 [INF] -------------Request-Begin------------
+2023-06-11 20:36:21.719 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByAccountId/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:36:21.720 [INF] 
+
+2023-06-11 20:36:21.723 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByAccountId/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:36:21.724 [INF] -------------Request-End------------
+2023-06-11 20:36:34.291 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:36:34.294 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:36:34.295 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:36:44.983 [INF] -------------Request-Begin------------
+2023-06-11 20:36:44.988 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByCustomerId/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:36:44.991 [INF] 
+
+2023-06-11 20:36:44.992 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/ByCustomerId/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:36:44.993 [INF] -------------Request-End------------
+2023-06-11 20:36:54.959 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:36:54.961 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:36:54.962 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:37:21.424 [ERR] GetById Exception
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.FindTracked(Object[] keyValues, IReadOnlyList`1& keyProperties)
+   at Microsoft.EntityFrameworkCore.Internal.EntityFinder`1.Find(Object[] keyValues)
+   at SimApi.Data.Repository.EfTransactionRepository.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Data\Repository\Transaction\EfTransactionRepository.cs:line 31
+   at SimApi.Operation.TransactionReportService.GetById(Int32 id) in C:\Users\bedir\Documents\workspace\C#\4- Simpra .Net Bootcamp\Assignments\aw4-bedirhansiyam\SimApi\SimApi.Operation\Dapper\Transaction\TransactionReportService.cs:line 71
+2023-06-11 20:37:21.476 [INF] -------------Request-Begin------------
+2023-06-11 20:37:21.478 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:37:21.481 [INF] 
+
+2023-06-11 20:37:21.482 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":false,"message":"Object reference not set to an instance of an object.","response":null}
+2023-06-11 20:37:21.484 [INF] -------------Request-End------------
+2023-06-11 20:53:04.462 [INF] Application is starting...
+2023-06-11 20:53:16.531 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:53:16.535 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:53:16.537 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:53:29.425 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:53:29.431 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 20:53:53.231 [INF] -------------Request-Begin------------
+2023-06-11 20:53:53.234 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 20:53:53.235 [INF] 
+
+2023-06-11 20:53:53.236 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}}
+2023-06-11 20:53:53.239 [INF] -------------Request-End------------
+2023-06-11 20:54:24.144 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 20:54:24.153 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 20:54:24.155 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 20:54:27.770 [INF] -------------Request-Begin------------
+2023-06-11 20:54:27.776 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 20:54:27.777 [INF] 
+
+2023-06-11 20:54:27.778 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 20:54:27.780 [INF] -------------Request-End------------
+2023-06-11 21:01:45.897 [INF] Application is starting...
+2023-06-11 21:01:55.373 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 21:01:55.378 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 21:01:55.380 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 21:01:56.510 [WRN] The 'bool' property 'IsValid' on entity type 'Account' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 21:01:56.516 [WRN] The 'bool' property 'IsValid' on entity type 'Customer' is configured with a database-generated default. This default will always be used for inserts when the property has the value 'false', since this is the CLR default for the 'bool' type. Consider using the nullable 'bool?' type instead, so that the default will only be used for inserts when the property value is 'null'.
+2023-06-11 21:01:57.592 [INF] -------------Request-Begin------------
+2023-06-11 21:01:57.595 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 21:01:57.596 [INF] 
+
+2023-06-11 21:01:57.597 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}}
+2023-06-11 21:01:57.600 [INF] -------------Request-End------------
+2023-06-11 21:02:03.206 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 21:02:03.208 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 21:02:03.209 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 21:02:03.264 [INF] -------------Request-Begin------------
+2023-06-11 21:02:03.266 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 21:02:03.267 [INF] 
+
+2023-06-11 21:02:03.268 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 21:02:03.270 [INF] -------------Request-End------------
+2023-06-11 21:02:05.579 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 21:02:05.581 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 21:02:05.582 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 21:02:05.595 [INF] -------------Request-Begin------------
+2023-06-11 21:02:05.598 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+Request Body: 
+2023-06-11 21:02:05.599 [INF] 
+
+2023-06-11 21:02:05.600 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}]}
+2023-06-11 21:02:05.601 [INF] -------------Request-End------------
+2023-06-11 21:02:09.383 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 21:02:09.385 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 21:02:09.386 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 21:02:09.394 [INF] -------------Request-Begin------------
+2023-06-11 21:02:09.397 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+Request Body: 
+2023-06-11 21:02:09.398 [INF] 
+
+2023-06-11 21:02:09.400 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/TransactionReport/1 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":{"accountId":1,"amount":11220.00,"direction":0,"transactionDate":"2023-06-06T10:12:36.919236Z","description":"aaa","referenceNumber":"43524C7383","transactionCode":"DEPOSIT","customerId":1,"accountNumber":0,"accountName":"string","customerNumber":10001,"firstName":"bedirhan","lastName":"siyam","id":1}}
+2023-06-11 21:02:09.402 [INF] -------------Request-End------------
+2023-06-11 21:03:44.890 [INF] Application is starting...
+2023-06-11 21:03:56.958 [INF] LogHeartBeatMiddleware.Invoke
+2023-06-11 21:03:56.965 [INF] LogErrorHandlerMiddleware.Invoke
+2023-06-11 21:03:56.967 [INF] LogRequestLoggingMiddleware.Invoke
+2023-06-11 21:03:59.264 [INF] -------------Request-Begin------------
+2023-06-11 21:03:59.266 [INF] Http Request Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+Request Body: 
+2023-06-11 21:03:59.267 [INF] 
+
+2023-06-11 21:03:59.268 [INF] Http Response Information: 
+Schema:https 
+Host: localhost:7235 
+Path: /simapi/v1/DapperCategory 
+QueryString:  
+StatusCode: 200 
+Response Body: {"success":true,"message":"Success","response":[{"name":"sssss","order":2,"id":1},{"name":"string","order":5,"id":2},{"name":"stsadsdadring","order":1,"id":3},{"name":"strasdasding","order":2,"id":4},{"name":"aaaa","order":2,"id":5},{"name":"dapper","order":1,"id":0}]}
+2023-06-11 21:03:59.271 [INF] -------------Request-End------------

@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using Autofac.Extensions.DependencyInjection;
+using Serilog;
 
 namespace SimApi.Service;
 
@@ -19,6 +20,7 @@ public class Program
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
            Host.CreateDefaultBuilder(args)
+               .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                .UseSerilog()
                .ConfigureWebHostDefaults(webBuilder =>
                {

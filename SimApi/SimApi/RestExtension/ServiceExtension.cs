@@ -16,6 +16,7 @@ public static class ServiceExtension
 
         services.AddScoped<ITransactionReportService, TransactionReportService>();
         services.AddScoped<IDapperAccountService, DapperAccountService>();
+        services.AddScoped<IDapperCategoryService, DapperCategoryService>();
 
         services.AddScoped<ScopedService>();
         services.AddTransient<TransientService>();
